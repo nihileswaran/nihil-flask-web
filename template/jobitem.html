@@ -1,0 +1,7 @@
+<div><p>{{ job ['id'] }}:</p></div>       
+<div><p>{{ job ['title'] }}:</p></div>        <div><p>{{ job ['location'] }}:</p></div>
+
+
+  {% if 'salary' in job %}
+  <div><p>{{ job ['salary'] }}:</p></div>
+  {% endif %}
