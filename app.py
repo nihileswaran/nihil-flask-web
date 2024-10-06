@@ -3,6 +3,8 @@ from flask import Flask, render_template, jsonify
 
 app = Flask(__name__,template_folder='template')
 
+#check
+
 JOBS = [
     {
     "id": 1,
@@ -20,7 +22,7 @@ JOBS = [
 
 @app.route("/")
 def hello_world():
-  return render_template('home.html',jobs=JOBS,company='chools')
+  return render_template('home.html',jobs=JOBS,company='Chools')
 
 @app.route("/jobs")
 def job():
