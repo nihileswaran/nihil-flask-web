@@ -8,7 +8,7 @@ app = Flask(__name__,template_folder='template')
 JOBS = [
     {
     "id": 1,
-    "title": "developer",
+    "title": "Software developer",
     "salary": 50000,
     "location": "Banglore"
     },
@@ -24,7 +24,7 @@ JOBS = [
 def hello_world():
   return render_template('home.html',jobs=JOBS,company='Chools')
 
-@app.route("/jobs")
+@app.route("/api/jobs")
 def job():
   return jsonify(JOBS)
   
